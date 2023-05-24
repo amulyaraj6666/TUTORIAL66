@@ -1,0 +1,837 @@
+#include<GL/glut.h>
+#include<stdlib.h>
+#include<stdio.h>
+
+GLfloat rot=3.0,ro=1.0;
+int p1=0,p2=0,p3=0,p4=0,p5=0,p6=0,p7=0,p8=0,p9=0;
+
+void point1()
+{
+	GLfloat j=-0.02,k=0.02;
+    GLfloat x=-0.21;
+    GLfloat y=-0.18;
+	for(int i=0;i<29;i++)
+	{
+     glPointSize(2.0);
+	 glBegin(GL_POINTS);
+
+	 glColor3f(1,1,1);
+	 glVertex2f(x,y);
+	 glEnd();
+	 x+=j;
+	 y+=k;
+	}
+
+	glBegin(GL_LINES);
+	glColor3f(1,0,0);
+	glVertex2f(-0.77,0.4);
+	glVertex2f(-0.77,0.34);
+	glVertex2f(-0.77,0.4);
+	glVertex2f(-0.73,0.37);
+	glEnd();
+	glPushMatrix();
+     glTranslatef(-0.225,-0.3,0);
+     glColor3f(0,1,0);
+     glutSolidCube(.029);
+     GLfloat vj=0.02,vk=-0.014;
+    GLfloat vx=-0.55;
+    GLfloat vy=-0.1;
+	for(int i=0;i<8;i++)
+	{
+     glPointSize(2.0);
+	 glBegin(GL_POINTS);
+
+	 glColor3f(0,1,0);
+	 glVertex2f(vx,vy);
+	 glEnd();
+	 vx+=vj;
+	 vy+=vk;
+	}
+     glPopMatrix();
+}
+
+void point2()
+{
+    GLfloat j=0.02,k=0.055;
+    GLfloat x=-0.49;
+    GLfloat y=-0.39;
+
+	for(int i=0;i<22;i++)
+	{
+	 glPointSize(2.0);
+	 glBegin(GL_POINTS);
+	 glColor3f(1,1,1);
+	 glVertex2f(x,y);
+	 glEnd();
+	 x+=j;
+	 y+=k;
+	}
+	/*glBegin(GL_LINES);
+	glColor3f(0,0,1);
+	glVertex2f(-0.09,0.74);
+	glVertex2f(-0.12,0.69);
+	glVertex2f(-0.15,0.74);
+	glVertex2f(-0.09,0.74);
+    glEnd();*/
+
+}
+
+void point3()
+{
+    GLfloat j=0.02,k=-0.05;
+    GLfloat x=0.09;
+    GLfloat y=0.78;
+	for(int i=0;i<24;i++)
+	{
+     glPointSize(2.0);
+	 glBegin(GL_POINTS);
+	 glVertex2f(x,y);
+	 glColor3f(1,1,1);
+	 glEnd();
+
+	 x+=j;
+	 y+=k;
+	}
+	 GLfloat vj=-0.02,vk=-0.014;
+    GLfloat vx=0.80;
+    GLfloat vy=-0.38;
+    glPushMatrix();
+	for(int i=0;i<8;i++)
+	{
+     glPointSize(2.0);
+	 glBegin(GL_POINTS);
+
+	 glColor3f(0,1,0);
+	 glVertex2f(vx,vy);
+	 glEnd();
+	 vx+=vj;
+	 vy+=vk;
+	}
+     glPopMatrix();
+
+
+	/*glBegin(GL_LINES);
+	glColor3f(0,1,0);
+	glVertex2f(0.75,0.36);
+	glVertex2f(0.72,0.34);
+    glVertex2f(0.75,0.36);
+	glVertex2f(0.75,0.40);
+	glEnd();*/
+
+}
+
+void point4()
+{
+	GLfloat j=0.02,k=0.02;
+    GLfloat x=0.26;
+    GLfloat y=-0.18;
+
+	for(int i=0;i<28;i++)
+	{
+	 glPointSize(2.0);
+	 glBegin(GL_POINTS);
+	 glVertex2f(x,y);
+	 glColor3f(1,1,1);
+	 glEnd();
+
+	 x+=j;
+	 y+=k;
+
+	}
+
+	glBegin(GL_LINES);
+	glColor3f(1,0,0);
+	glVertex2f(0.26,-0.18);
+	glVertex2f(0.26,-0.13);
+    glVertex2f(0.26,-0.18);
+	glVertex2f(0.29,-0.20);
+	glEnd();
+glPushMatrix();
+     glTranslatef(0.225,-0.3,0);
+     glColor3f(0,1,0);
+     glutSolidCube(.029);
+     glPopMatrix();
+     //glutPostRedisplay();
+}
+
+void point5()
+{
+	GLfloat j=0.02,k=0.02;
+    GLfloat x=0.24;
+    GLfloat y=-0.19;
+
+	for(int i=0;i<29;i++)
+	{
+	 glPointSize(2.0);
+	 glBegin(GL_POINTS);
+	 glVertex2f(x,y);
+	 glColor3f(1,1,0);
+	 glEnd();
+
+	 x+=j;
+	 y+=k;
+
+	}
+	/*glBegin(GL_LINES);
+	glColor3f(1,0,0);
+	glVertex2f(0.72,0.35);
+	glVertex2f(0.77,0.35);
+	glVertex2f(0.77,0.35);
+	glVertex2f(0.77,0.30);
+	glEnd();*/
+
+
+}
+
+
+void point6()
+{
+
+    GLfloat j=-0.02,k=0.01;
+    GLfloat x=0.78;
+    GLfloat y=0.44;
+
+	for(int i=0;i<35;i++)
+	{
+	glPointSize(2.0);
+	glBegin(GL_POINTS);
+	 glVertex2f(x,y);
+	 glColor3f(1,1,0);
+	 glEnd();
+
+	 x+=j;
+	 y+=k;
+
+	}
+   /* glBegin(GL_LINES);
+	glColor3f(1,0,0);
+		glVertex2f(0.05,0.62);
+	glVertex2f(0.05,0.68);
+
+	//glVertex2f(0.77,0.35);
+	//glVertex2f(0.77,0.30);
+	glEnd();*/
+
+}
+
+void point7()
+{
+	GLfloat j=-0.02,k=-0.01;
+    GLfloat x=-0.1;
+    GLfloat y=0.75;
+
+	for(int i=0;i<35;i++)
+	{
+     glPointSize(2.0);
+	 glBegin(GL_POINTS);
+	 glVertex2f(x,y);
+	 glColor3f(1,1,0);
+	 glEnd();
+
+	 x+=j;
+	 y+=k;
+
+	}
+}
+
+void point8()
+{
+	GLfloat j=0.02,k=-0.02;
+    GLfloat x=-0.8;
+    GLfloat y=0.4;
+
+	for(int i=0;i<30;i++)
+	{
+	 glPointSize(2.0);
+	 glBegin(GL_POINTS);
+	 glVertex2f(x,y);
+	 glColor3f(1,1,0);
+	 glEnd();
+
+	 x+=j;
+	 y+=k;
+
+	}
+}
+
+void p11()
+{
+	p1=1;
+}
+
+void p12()
+{
+	p2=1;
+}
+void p13()
+{
+	p3=1;
+}
+void p14()
+{
+	p4=1;
+}
+
+void p()
+{
+	p1=0,p2=0,p3=0,p4=0,p5=0,p6=0,p7=0,p8=0;
+}
+
+void p15()
+{
+	p5=1;
+}
+
+void p16()
+{
+	p6=1;
+}
+
+void p17()
+{
+	p7=1;
+}
+
+void p18()
+{
+	p8=1;
+}
+
+void p19()
+{
+	p9=1;
+}
+
+void p20()
+{
+	p9=0;
+}
+
+void text()
+{
+      // void tri(void);
+	   glClear(GL_COLOR_BUFFER_BIT);
+
+       glColor3f(1.0,0.0,1.0);
+
+	   glRasterPos3f(-0.29,0.6,0.0);
+       glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'P');
+
+       glRasterPos3f(-0.25,0.6,0.0);
+       glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'R');
+
+       glRasterPos3f(-0.22,0.6,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'O');
+
+       glRasterPos3f(-0.18,0.6,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'J');
+
+       glRasterPos3f(-0.16,0.6,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'E');
+
+       glRasterPos3f(-0.13,0.6,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'C');
+
+       glRasterPos3f(-0.10,0.6,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'T');
+
+       glRasterPos3f(-0.04,0.6,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'O');
+
+       glRasterPos3f(-0.00,0.6,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'N');
+
+	   glRasterPos3f(-0.24,0.4,0.0);
+       glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'M');
+
+       glRasterPos3f(-0.18,0.4,0.0);
+       glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'O');
+
+       glRasterPos3f(-0.14,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'B');
+
+       glRasterPos3f(-0.10,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'I');
+
+       glRasterPos3f(-0.08,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'L');
+
+       glRasterPos3f(-0.04,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'E');
+
+
+       glRasterPos3f(0.05,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'C');
+
+       glRasterPos3f(0.09,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'O');
+
+       glRasterPos3f(0.13,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'M');
+
+       glRasterPos3f(0.17,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'M');
+
+       glRasterPos3f(0.22,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'U');
+
+	   glRasterPos3f(0.26,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'N');
+
+	   glRasterPos3f(0.30,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'I');
+
+	   glRasterPos3f(0.32,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'C');
+
+	   glRasterPos3f(0.36,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'A');
+
+	   glRasterPos3f(0.40,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'T');
+
+	   glRasterPos3f(0.44,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'I');
+
+	   glRasterPos3f(0.46,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'O');
+
+	   glRasterPos3f(0.50,0.4,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'N');
+
+       glRasterPos3f(0.30,-0.6,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'B');
+
+	   glRasterPos3f(0.34,-0.6,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'Y');
+
+
+       glRasterPos3f(0.45,-0.9,0.0);
+       glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'G');
+
+       glRasterPos3f(0.49,-0.9,0.0);
+       glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'O');
+
+       glRasterPos3f(0.53,-0.9,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'W');
+
+       glRasterPos3f(0.58,-0.9,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'T');
+
+       glRasterPos3f(0.62,-0.9,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'H');
+
+       glRasterPos3f(0.66,-0.9,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'A');
+
+       glRasterPos3f(0.70,-0.9,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'M');
+
+       glRasterPos3f(0.76,-0.9,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'I');
+
+       glRasterPos3f(0.78,-0.9,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'.');
+
+	    glRasterPos3f(0.80,-0.9,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'K');
+
+	    glRasterPos3f(0.86,-0.9,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'.');
+
+	    glRasterPos3f(0.88,-0.9,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'S');
+
+
+
+
+
+       glRasterPos3f(0.44,-0.8,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'N');
+
+       glRasterPos3f(0.47,-0.8,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'E');
+
+       glRasterPos3f(0.50,-0.8,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'T');
+
+       glRasterPos3f(0.54,-0.8,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'H');
+
+       glRasterPos3f(0.59,-0.8,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'R');
+
+       glRasterPos3f(0.62,-0.8,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'A');
+
+       glRasterPos3f(0.66,-0.8,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'V');
+
+       glRasterPos3f(0.69,-0.8,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'A');
+
+glRasterPos3f(0.72,-0.8,0.0);
+glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'T');
+
+glRasterPos3f(0.75,-0.8,0.0);
+glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'H');
+
+glRasterPos3f(0.79,-0.8,0.0);
+glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'I');
+
+glRasterPos3f(0.82,-0.8,0.0);
+glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'.');
+
+glRasterPos3f(0.85,-0.8,0.0);
+glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'R');
+	   glEnd();
+       glFlush();
+	   	   glutSwapBuffers();
+//tri();
+
+}
+
+
+static void KeyPressFunc( unsigned char Key, int x, int y )
+{
+	switch ( Key ) {
+
+    case 'a':
+	case 'A':p11();
+             break;
+
+	case 's':
+	case 'S':p12();
+		     break;
+
+    case 'd':
+    case 'D':p13();
+		     break;
+
+    case 'f':
+    case 'F':p14();
+            // light();
+		     break;
+
+    case ' ':p();
+		     break;
+
+    case 'w':
+	case 'W':p15();
+		     break;
+
+    case 'e':
+    case 'E':p16();
+		     break;
+
+    case 'r':
+    case 'R':p17();
+		     break;
+
+    case 't':
+    case 'T':p18();
+		     break;
+
+    case 'u':p19();
+		     break;
+
+    case 'v':p20();
+		     break;
+
+	case 'q':exit(1);
+	}
+}
+
+void tri()
+{
+	glPushMatrix();
+    if(p1==1)
+	  point1();
+    if(p2==1)
+      point2();
+	if(p3==1)
+	  point3();
+	if(p4==1)
+	  point4();
+	if(p5==1)
+	  point5();
+	if(p5==1)
+	  point5();
+	if(p6==1)
+	  point6();
+	if(p7==1)
+	  point7();
+     if(p8==1)
+	  point8();
+     if(p9==1)
+		 text();
+
+	 if(p9==0)
+	  goto l1;
+
+l1:	glPushMatrix();
+	glTranslatef(-0.8,-0.35,0);
+	glRotatef(-95,1,0,0);
+	glColor3f(1,1,0.9);
+	glutWireCone(0.1,0.8,10,15);
+    glPopMatrix();
+
+    glPushMatrix();
+	glColor3f(0,1,0);
+    glTranslatef(-0.8,0.46,0);
+	glutSolidCube(0.02);
+    glPopMatrix();
+
+	glPushMatrix();
+
+	glColor3f(1,0,0);
+	glRotatef(rot,0.0,1.0,0.0);
+    glTranslatef(-0.8,0.46,0);
+	glutSolidCube(0.02);
+	rot+=0.1;
+
+	  if(rot==25.75)
+		 rot=2.0;
+    glPopMatrix();
+
+
+	glPushMatrix();
+	glColor3f(1,1,0.9);
+    glTranslatef(0.8,-0.35,0);
+    glRotatef(-95,1,0,0);
+	glutWireCone(0.1,0.8,10,15);
+	glPopMatrix();
+    glEnd();
+
+glPushMatrix();
+
+	glColor3f(1,0,0);
+	glRotatef(rot,0.0,1.0,0.0);
+    glTranslatef(0.8,0.46,0);
+	glutSolidCube(0.02);
+	rot+=0.1;
+
+	  if(rot==25.75)
+		 rot=2.0;
+		 glPopMatrix();
+	glPushMatrix();
+	glColor3f(0,1,0);
+    glTranslatef(0.8,0.46,0);
+	glutSolidCube(0.02);
+    glPopMatrix();
+
+	glPushMatrix();
+    glBegin(GL_POLYGON);
+	glColor3f(1,1,1);
+	glVertex2f(-0.25,-0.5);
+	glVertex2f(-0.25,-0.3);
+	glVertex2f(-0.2,-0.3);
+	glVertex2f(-0.2,-0.5);
+    glEnd();
+
+
+	glBegin(GL_LINES);
+	glColor3f(1,1,1);
+
+	glVertex2f(-0.2,-0.3);
+	glVertex2f(-0.2,-0.2);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glVertex2f(0.25,-0.5);
+	glVertex2f(0.25,-0.3);
+	glVertex2f(0.2,-0.3);
+	glVertex2f(0.2,-0.5);
+    glEnd();
+ glPushMatrix();
+     glTranslatef(0.225,-0.35,0);
+     glColor3f(1,0,0);
+     glutSolidCube(.029);
+     glPopMatrix();
+ glPushMatrix();
+     glTranslatef(-0.225,-0.35,0);
+     glColor3f(1,0,0);
+     glutSolidCube(.029);
+     glPopMatrix();
+    glBegin(GL_LINES);
+    glColor3f(1,1,1);
+	glVertex2f(0.25,-0.3);
+    glVertex2f(0.25,-0.2);
+	glEnd();
+glPopMatrix();
+	glPopMatrix();
+    glFlush();
+
+	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    glLoadIdentity();
+
+	glPushMatrix();
+	 glRotatef(rot,0.0,1.0,0.0);
+	 glTranslatef(0.0,0.79,0.0);
+	 glColor3f(1.0,0.5,0.0);
+	 glutWireSphere(.05,12,12);
+	 	   rot+=0.8;
+
+	  if(rot==25.75)
+		 rot=2.0;
+	  glutPostRedisplay();
+	  glPopMatrix();
+     glPushMatrix();
+      glRotatef(ro,0.01,1.0,0.3);
+	 glTranslatef(0.0,0.80,0.0);
+	 glBegin (GL_QUADS);
+	 /*glColor3f (0.5, 0.7, 0.9);
+	 glVertex2f(-0.09,-0.09);
+	 glVertex2f(-0.09,0.09);
+	 glVertex2f(0.09,0.09);
+	 glVertex2f(0.09,-0.09);*/
+
+	 glColor3f (0.0, 0.0, 1.0);
+	/* glVertex2f(-0.05,0.09);
+	 glVertex2f(-0.05,0.12);
+	 glVertex2f(0.05,0.12);
+	 glVertex2f(0.05,0.09);*/
+	 //glTranslatef(-0.01,0.2,0.0);
+	 glutSolidCube(0.025);
+
+	 glColor3f (0.0, 0.0, 1.0);
+	 glVertex2f(-0.05,-0.13);
+	 glVertex2f(-0.05,-0.09);
+	 glVertex2f(0.05,-0.09);
+	 glVertex2f(0.05,-0.13);
+
+	 glColor3f (1.0, 1.0, 0.0);
+	 glVertex2f(-0.09,-0.02);
+	 glVertex2f(-0.09,0.01);
+	 glVertex2f(-0.16,0.01);
+	 glVertex2f(-0.16,-0.02);
+
+	 glColor3f (1.0, 1.0, 0.0);
+	 glVertex2f(0.09,-0.02);
+	 glVertex2f(0.09,0.01);
+	 glVertex2f(0.16,0.01);
+	 glVertex2f(0.16,-0.02);
+	 glEnd();
+	  ro+=0.8;
+
+	  if(ro==25.75)
+	 ro=20.0;
+	 glutPostRedisplay();
+	 glPopMatrix();
+
+
+	  glPushMatrix();
+	  glColor3f(.9,.9,0);
+	  glRotatef(120,1,0,0);
+	  glTranslatef(0.55,0.9,0);
+	  glutSolidCube(.12);
+	   glTranslatef(-0.05,0.0,0);
+	  glutSolidCube(.12);
+	  glColor3f(0,0,1);
+	    glRasterPos3f(-0.05,0.0,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'M');
+	   glRasterPos3f(-0.019,0.0,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'S');
+	   glRasterPos3f(-0.0035,0.0,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'C');
+
+
+	  glPopMatrix();
+glPushMatrix();
+	  glColor3f(.9,.9,0);
+	  glRotatef(120,1,0,0);
+	  glTranslatef(-0.5,0.9,0);
+	  glutSolidCube(.12);
+	  glTranslatef(-0.05,0.0,0);
+	 glutSolidCube(.12);
+	  glColor3f(0,0,1);
+	    glRasterPos3f(0.0025,0.0,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'M');
+	   glRasterPos3f(0.032,0.0,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'S');
+	   glRasterPos3f(0.049,0.0,0.0);
+	   glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'C');
+      glPopMatrix();
+      glPushMatrix();
+/*GLfloat j=0.02,k=0.02;
+    GLfloat x=-0.8;
+    GLfloat y=-0.35;
+	for(int i=0;i<14;i++)
+	{
+     glP      ointSize(1.0);
+	 glBegin(GL_POINTS);
+
+	 glColor3f(0,1,0);
+	 glVertex2f(x,y);
+	 glEnd();
+	 x+=j;
+	 y+=k;
+	}*/
+	glBegin(GL_LINES);
+	glVertex2f(-.8,-.35);
+	glVertex2f(-.61,-.5);
+	glEnd();
+	glPopMatrix();
+
+		glPushMatrix();
+
+	/*glColor3f(1,0,1);
+	glRotatef(rot,1.0,0.4,0.0);
+    glTranslatef(-0.85,-.10,0.15);
+	glutSolidCube(0.02);
+	rot+=0.1;
+
+	  if(rot==25.75)
+		 rot=2.0;
+    glPopMatrix();*/
+
+	glBegin(GL_LINES);
+	glColor3f(0,0,1);
+	glVertex2f(.8,-.35);
+	glVertex2f(.61,-.5);
+	glEnd();
+	glPopMatrix();
+
+
+
+}
+
+void myReshape(int w, int h)
+{
+    glViewport(0, 0, w, h);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+  // gluOrtho2D(0.0,499.0,0.0,499.0);
+    if (w <= h)
+        glOrtho(-2.0, 2.0, -2.0 *(GLfloat) h / (GLfloat) w,  2.0 * (GLfloat) h / (GLfloat) w,-10.0, 10.0);
+    else
+        glOrtho(-1.0* (GLfloat) w / (GLfloat) h, 1.0*(GLfloat)w/(GLfloat)h,-1.5,1.5,-10.0,10.0);
+    glMatrixMode(GL_MODELVIEW);
+    glutPostRedisplay();
+}
+
+
+int main(int argc,char **argv)
+{
+	glutInit(&argc,argv);
+	glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB|GLUT_DEPTH);
+	glutInitWindowSize(1500,1500);
+	glutCreateWindow("Comm");
+
+	glutPositionWindow(0,0);
+	glutDisplayFunc(text);
+
+
+
+	int id=glutCreateWindow("communication");
+	glutSetWindow(id);
+    glutInitWindowSize(500,500);
+
+ glutReshapeFunc(myReshape);
+
+
+	glutDisplayFunc(tri);
+	glutKeyboardFunc(KeyPressFunc);
+	glutMainLoop();
+	return 0;
+}
